@@ -1,0 +1,3 @@
+= JsExceptionNotifier
+
+Detects JS exceptions and sends notifications via email using Exception Notification gem.
