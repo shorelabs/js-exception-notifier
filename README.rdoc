@@ -9,7 +9,7 @@ The Exception Notification gem detects JS exceptions and sends notifications via
 == Getting Started
 Add the following line to your application's Gemfile:
 
-  gem "js-exception-notifier)", :git => "git://github.com/shorelabs/js-exception-notifier.git"
+  gem "js-exception-notifier", :git => "git://github.com/shorelabs/js-exception-notifier.git"
 
 In config/routes.rb add:
 
