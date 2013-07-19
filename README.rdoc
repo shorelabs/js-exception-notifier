@@ -13,7 +13,7 @@ Add the following line to your application's Gemfile:
 
 In config/routes.rb add:
 
-  mount SimpleSurvey::Engine => "/js_exception_notifier"
+  mount JsExceptionNotifier::Engine => "/js_exception_notifier"
 
 That’s it, the configuration ends here.
 
