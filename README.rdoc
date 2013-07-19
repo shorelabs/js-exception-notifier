@@ -1,41 +1,28 @@
 = JsExceptionNotifier
-
--
-
 The Exception Notification gem detects JS exceptions and sends notifications via email using Exception Notification gem.
 
-## Requirements
+== Requirements
+- Ruby 2.0.0 or greater
+- Rails 4.0 or greater
+- Exception Notification gem
 
-* Ruby 2.0.0 or greater
-* Rails 4.0 or greater
-* Exception Notification gem
-
-## Getting Started
-
+== Getting Started
 Add the following line to your application's Gemfile:
 
-```ruby
-gem "js-exception-notifier)", :git => "git://github.com/shorelabs/js-exception-notifier.git"
-```
+  gem "js-exception-notifier)", :git => "git://github.com/shorelabs/js-exception-notifier.git"
 
 In config/routes.rb add:
 
-```ruby
-mount SimpleSurvey::Engine => "/js_exception_notifier"
-```
+  mount SimpleSurvey::Engine => "/js_exception_notifier"
 
 That’s it, the configuration ends here.
 
-## Usage
+== Usage
 
 Add the following line at the beggining of the javascript file
 
-```ruby
-<%= javascript_include_tag "js_exception_notifier/js_exception_notifier.js.coffee" %>
-```
+  javascript_include_tag "js_exception_notifier/js_exception_notifier.js.coffee"
 
 Or just include it within the asset pipeline:
 
-```ruby
-//= require js_exception_notifier/js_exception_notifier.js.coffee
-```
+  //= require js_exception_notifier/js_exception_notifier.js.coffee
