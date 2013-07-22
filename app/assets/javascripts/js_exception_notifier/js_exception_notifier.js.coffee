@@ -13,3 +13,5 @@ $(document).ready ->
         data : {errorMsg, file, lineNumber, browserInfo}
         type : 'POST'
         dataType: 'script'
+        error: (data, textStatus, jqXHR) ->
+          alert data.responseText
