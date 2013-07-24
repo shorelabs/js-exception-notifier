@@ -1,10 +1,12 @@
 = JsExceptionNotifier
-The JsExceptionNotifier gem detects JS exceptions and sends notifications via email using Exception Notification gem.
+The JsExceptionNotifier gem detects JS exceptions with TraceKit and sends notifications via email using Exception Notification gem.
+The TraceKit is attached by default.
 
 == Requirements
 - Ruby 2.0.0 or greater
 - Rails 4.0 or greater
 - Exception Notification gem
+- TraceKit
 
 == Getting Started
 Add the following line to your application's Gemfile:
@@ -17,8 +19,13 @@ That’s it, the configuration ends up here.
 
 Add the following line at the beginning of the javascript file
 
+  javascript_include_tag "js_exception_notifier/trace_kit/tracekit.js"
+
+Add the following line just below the previous one
+
   javascript_include_tag "js_exception_notifier/js_exception_notifier.js.coffee"
 
-Or just include it within the asset pipeline:
+Or just include files within the asset pipeline:
 
+  //= require js_exception_notifier/trace_kit/tracekit.js
   //= require js_exception_notifier/js_exception_notifier.js.coffee
