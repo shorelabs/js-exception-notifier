@@ -9,6 +9,8 @@ class JsExceptionNotifierController < ApplicationController
   end
 
   def javascript_error
+    render :nothing=> true and return if params.include?('errorMsg')
+
     if defined?(ExceptionNotification)
       ExceptionNotifier.notify_exception(JSException.new(params['errorReport']['message'].to_s), :data=> {:errorReport => params['errorReport']})
       render :nothing=> true
