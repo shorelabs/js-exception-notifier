@@ -6,7 +6,7 @@ The TraceKit is attached by default.
 - Ruby 2.0.0 or greater
 - Rails 4.0 or greater
 - Exception Notification gem
-- TraceKit
+- TraceKit(included in package)
 
 == Getting Started
 Add the following line to your application's Gemfile:
@@ -19,13 +19,8 @@ That’s it, the configuration ends up here.
 
 Add the following line at the beginning of the javascript file
 
-  javascript_include_tag "js_exception_notifier/trace_kit/tracekit.js"
-
-Add the following line just below the previous one
-
-  javascript_include_tag "js_exception_notifier/js_exception_notifier.js.coffee"
+  javascript_include_tag "js_exception_notifier.js"
 
 Or just include files within the asset pipeline:
 
-  //= require js_exception_notifier/trace_kit/tracekit.js
-  //= require js_exception_notifier/js_exception_notifier.js.coffee
+  //= require js_exception_notifier
