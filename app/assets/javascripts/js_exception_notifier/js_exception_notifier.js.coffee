@@ -14,6 +14,11 @@ isExcludedFile = (filename)->
 TraceKit.report.subscribe JSExceptionNotifierLogger = (errorReport) ->
 
   if errorReport.message != "" and errorReport.stack[0].line > 0 and isExcludedFile(errorReport.stack[0].url) is null
+    # Basic rate limiting
+    window.errorCount or (window.errorCount = 0)
+    return if window.errorCount > 5
+    window.errorCount += 1
+
     $.ajax
       url: '/js_exception_notifier'
       data : { errorReport }
