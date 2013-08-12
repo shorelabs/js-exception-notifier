@@ -36,7 +36,7 @@ TraceKit.report.subscribe JSExceptionNotifierLogger = (errorReport) ->
       type : 'POST'
       dataType: 'script'
       error: (data, textStatus, jqXHR) ->
-        alert data.responseText
+        console.log data.responseText
 
 # Wraps your code on document.ready
 $.fn.ready = TraceKit.wrap($.fn.ready)
