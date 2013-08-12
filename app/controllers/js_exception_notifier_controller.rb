@@ -13,11 +13,11 @@ class JsExceptionNotifierController < ApplicationController
   end
 
   def javascript_error
-    if defined?(ExceptionNotification)
+    if defined?(ExceptionNotification) && Rails.env.production?
       ExceptionNotifier.notify_exception(JSException.new(params['errorReport']['message'].to_s), :data=> {:errorReport => params['errorReport']})
       render :nothing=> true
     else
-      if Rails.env.match('development')
+      if Rails.env.development?
         render :text=> params['errorReport']['message'].to_s, :status=> :error
       else
         render :nothing=> true
