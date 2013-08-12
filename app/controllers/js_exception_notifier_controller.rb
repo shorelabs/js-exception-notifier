@@ -1,6 +1,6 @@
 class JsExceptionNotifierController < ApplicationController
   THROTTLE_MAX_RATE = 10.0          # Max 10 error reports from single user
-  THROTTLE_DURATION = 60.0 * 60.0   # per 60*60 sec = 1 hour. Keep these values as floats.
+  THROTTLE_DURATION = 120.0 * 60.0   # per 60*60 sec = 1 hour. Keep these values as floats.
 
   before_filter :discard_meaningless_reports, :enforce_rate_limit
 

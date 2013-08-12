@@ -1,7 +1,7 @@
 # Excludes JS files from services which generates exceptions we can't help
 isExcludedFile = (filename)->
   excludedServices = []
-  excludedServices.push('newrelic', 'livechatinc', 'selenium-ide', 'firebug', 'tracekit')
+  excludedServices.push('newrelic', 'livechatinc', 'selenium-ide', 'firebug', 'tracekit', 'amberjack')
   result = null
 
   $.each excludedServices, (index, value) ->
