@@ -6283,3 +6283,538 @@ Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
 JsExceptionNotifierTest: test_truth
 -----------------------------------
   [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_be_a_Module!
+-----------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_be_nil_then_initialized_to_constant!
+-----------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_not_accept_this_parameter!
+-------------------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_return_error_desc!
+-----------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_return_notice_about_error_limit!_
+--------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------
+JsExceptionNotifierTest: test_truth
+-----------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_be_a_Module!
+-----------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_be_nil_then_initialized_to_constant!
+-----------------------------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_not_accept_this_parameter!
+-------------------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorMsg"=>"error"}
+Filter chain halted as :discard_meaningless_reports rendered or redirected
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_return_error_desc!
+-----------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_return_notice_about_error_limit!_
+--------------------------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------
+JsExceptionNotifierTest: test_truth
+-----------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_be_a_Module!
+-----------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_be_nil_then_initialized_to_constant!
+-----------------------------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_not_accept_this_parameter!
+-------------------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorMsg"=>"error"}
+Filter chain halted as :discard_meaningless_reports rendered or redirected
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_return_error_desc!
+-----------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_return_notice_about_error_limit!_
+--------------------------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 406 Not Acceptable in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------
+JsExceptionNotifierTest: test_truth
+-----------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_be_a_Module!
+-----------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_be_nil_then_initialized_to_constant!
+-----------------------------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_not_accept_this_parameter!
+-------------------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorMsg"=>"error"}
+Filter chain halted as :discard_meaningless_reports rendered or redirected
+Completed 422 Unprocessable Entity in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_return_error_desc!
+-----------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_return_notice_about_error_limit!_
+--------------------------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------
+JsExceptionNotifierTest: test_truth
+-----------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_be_a_Module!
+-----------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_be_nil_then_initialized_to_constant!
+-----------------------------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_not_accept_this_parameter!
+-------------------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorMsg"=>"error"}
+Filter chain halted as :discard_meaningless_reports rendered or redirected
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_return_error_desc!
+-----------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_return_notice_about_error_limit!_
+--------------------------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------
+JsExceptionNotifierTest: test_truth
+-----------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_be_a_Module!
+-----------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_be_nil_then_initialized_to_constant!
+-----------------------------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_not_accept_this_parameter!
+-------------------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorMsg"=>"error"}
+Filter chain halted as :discard_meaningless_reports rendered or redirected
+Completed 422 Unprocessable Entity in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_return_error_desc!
+-----------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------------------
+JsExceptionNotifierControllerTest: test_Should_return_notice_about_error_limit!_
+--------------------------------------------------------------------------------
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+Processing by JsExceptionNotifierController#javascript_error as HTML
+  Parameters: {"errorReport"=>"Test Error"}
+Filter chain halted as :enforce_rate_limit rendered or redirected
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------
+JsExceptionNotifierTest: test_truth
+-----------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction

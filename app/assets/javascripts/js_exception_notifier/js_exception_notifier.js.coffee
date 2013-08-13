@@ -34,7 +34,7 @@ TraceKit.report.subscribe JSExceptionNotifierLogger = (errorReport) ->
       url: '/js_exception_notifier'
       data : { errorReport }
       type : 'POST'
-      dataType: 'script'
+      dataType: 'JSON'
       error: (data, textStatus, jqXHR) ->
         console.log data
 

@@ -15,9 +15,9 @@ class JsExceptionNotifierController < ApplicationController
   def javascript_error
     if defined?(ExceptionNotification) && Rails.env.production?
       ExceptionNotifier.notify_exception(JSException.new(params['errorReport']['message'].to_s), :data=> {:errorReport => params['errorReport']})
-      render :nothing=> true
+      render json: {}, status: 200
     else
-      render json: { text: params['errorReport'].to_s }, status: 200
+      render json: { text: params['errorReport'].to_s }, status: 422
     end
   end
 
@@ -25,7 +25,11 @@ class JsExceptionNotifierController < ApplicationController
 
   # Discards meaningless reports from old version of JSExceptionNotifier
   def discard_meaningless_reports
-    render json: { text: 'old version not supported' }, status: 200 if params.include?('errorMsg')
+    if params.include?('errorMsg') && Rails.env.production?
+      render json: {}, status: 200
+    elsif params.include?('errorMsg') && !Rails.env.production?
+      render json: { text: 'old version not supported' }, status: 422 if params.include?('errorMsg') && !Rails.env.production?
+    end
   end
 
   # Basic rate limiting
@@ -43,10 +47,13 @@ class JsExceptionNotifierController < ApplicationController
 
     if allowance < 1.0
       cookies[:js_exception_notifier_allowance] = allowance
-      render json: { text: "You reached error limit!" }, status: 200
+      if Rails.env.production?
+        render json: {}, status: 200
+      else
+        render json: { text: "You reached error limit!" }, status: 422
+      end
     else
       cookies[:js_exception_notifier_allowance] = allowance - 1.0
-      # raise cookies[:js_exception_notifier_allowance].inspect
     end
   end
 
