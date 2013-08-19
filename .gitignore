@@ -2,3 +2,5 @@
 .bundle/
 log/*.log
 pkg/
+test/dummy/log/*.log
+test/dummy/db/*.sqlite3

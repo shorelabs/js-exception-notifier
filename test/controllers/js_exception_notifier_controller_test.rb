@@ -10,17 +10,21 @@ class JsExceptionNotifierControllerTest < ActionController::TestCase
     assert_kind_of Module, JsExceptionNotifier
   end
 
-  test 'Should be nil then initialized to constant!' do    
-    assert_equal JsExceptionNotifierController::THROTTLE_MAX_RATE.to_i, cookies[:js_exception_notifier_allowance].to_i
+  test 'Should be nil!' do    
+    assert_equal nil, session[:js_exception_notifier_allowance]    
+  end
 
+  test 'Should deliver email!' do
     post :javascript_error
-    assert_equal JsExceptionNotifierController::THROTTLE_MAX_RATE.to_i-1, cookies[:js_exception_notifier_allowance].to_i
+    assert_equal "OK", json_response['status']
+  end
 
-    for i in 0..JsExceptionNotifierController::THROTTLE_MAX_RATE.to_i
+  test 'Should reduce allowance counter!' do
+    for i in 0..(JsExceptionNotifierController::THROTTLE_MAX_RATE).to_f
       post :javascript_error
     end
 
-    assert_equal 0, cookies[:js_exception_notifier_allowance].to_i
+    assert_equal 0.0, session[:js_exception_notifier_allowance].to_f
   end
 
   test 'Should not accept this parameter!' do
@@ -34,7 +38,7 @@ class JsExceptionNotifierControllerTest < ActionController::TestCase
   end
 
   test 'Should return notice about error limit! ' do
-    for i in 0..JsExceptionNotifierController::THROTTLE_MAX_RATE.to_i + 1
+    for i in 0..(JsExceptionNotifierController::THROTTLE_MAX_RATE).to_f + 1.0
       post :javascript_error, errorReport: 'Test Error'
     end
 
@@ -42,7 +46,7 @@ class JsExceptionNotifierControllerTest < ActionController::TestCase
   end 
 
   def setup
-    @request.cookies[:js_exception_notifier_allowance] = JsExceptionNotifierController::THROTTLE_MAX_RATE.to_i  
+    @request.session[:js_exception_notifier_allowance] = nil 
   end
 
 end

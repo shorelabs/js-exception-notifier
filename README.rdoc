@@ -24,3 +24,8 @@ Add the following line at the beginning of the javascript file
 Or just include files within the asset pipeline:
 
   //= require js_exception_notifier
+
+== JsExceptionNotifier comes with a dummy Rails application that you can run:
+
+  bundle
+  cd test/dummy && rails s
