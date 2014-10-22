@@ -2,7 +2,7 @@ class JsExceptionNotifierController < ApplicationController
   THROTTLE_MAX_RATE = 10.0          # Max 10 error reports from single user
   THROTTLE_DURATION = 240.0 * 60.0   # per 240*60 sec = 4 hour. Keep these values as floats.
 
-  before_filter :discard_meaningless_reports, :enforce_rate_limit
+  before_filter :enforce_rate_limit
 
   class JSException < StandardError
     attr_reader :message
@@ -24,15 +24,6 @@ class JsExceptionNotifierController < ApplicationController
   end
 
   private
-
-  # Discards meaningless reports from old version of JSExceptionNotifier
-  def discard_meaningless_reports
-    if params.include?('errorMsg') && Rails.env.production?
-      render json: {}, status: 200
-    elsif params.include?('errorMsg') && !Rails.env.production?
-      render json: { text: 'old version not supported' }, status: 422 if params.include?('errorMsg') && !Rails.env.production?
-    end
-  end
 
   # Basic rate limiting
   # for inspiration see http://stackoverflow.com/questions/667508/whats-a-good-rate-limiting-algorithm

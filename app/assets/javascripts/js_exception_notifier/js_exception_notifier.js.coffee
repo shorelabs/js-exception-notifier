@@ -3,28 +3,31 @@
 isExcludedContext = (context)->
   excludedContext = []
   excludedContext.push('NREUMQ')
-  result = null
 
   $.each excludedContext, (index, value) ->
     result = context.match(value)
-    return if result
+    return true if result
 
-  result
+  false
 
 isExcludedFile = (filename)->
   excludedServices = []
   excludedServices.push('newrelic', 'livechatinc', 'selenium-ide', 'firebug', 'tracekit', 'amberjack', 'googleapis')
-  result = null
 
   $.each excludedServices, (index, value) ->
     result = filename.match(value)
-    return if result
+    return true if result
 
-  result
+  false
 
 # Subscribes to TraceKit and sends report via ExceptionNotification gem
 TraceKit.report.subscribe JSExceptionNotifierLogger = (errorReport) ->
-  if errorReport.message != "" and errorReport.stack[0].line > 0 and isExcludedFile(errorReport.stack[0].url) is null and isExcludedContext(errorReport.stack[0].context.join()) is null
+  if errorReport.message != '' &&
+      errorReport.stack && errorReport.stack[0] &&
+      errorReport.stack[0].line > 0 &&
+      ! isExcludedFile(errorReport.stack[0].url) &&
+      ! isExcludedContext(errorReport.stack[0].context.join())
+
     # Basic rate limiting
     window.errorCount or (window.errorCount = 0)
     return if window.errorCount > 5
