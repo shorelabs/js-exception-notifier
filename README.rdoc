@@ -11,7 +11,7 @@ The TraceKit is attached by default.
 == Getting Started
 Add the following line to your application's Gemfile:
 
-  gem "js-exception-notifier", :git => "git://github.com/shorelabs/js-exception-notifier.git"
+  gem "js_exception_notifier", :git => "git://github.com/shorelabs/js-exception-notifier.git"
 
 That’s it, the configuration ends up here.
 
