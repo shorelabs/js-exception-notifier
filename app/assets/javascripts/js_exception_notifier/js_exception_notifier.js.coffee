@@ -1,6 +1,8 @@
 # Excludes JS files from services which generates exceptions we can't help
 
 isExcludedContext = (context)->
+  return false unless context
+
   excludedContext = []
   excludedContext.push('NREUMQ')
 
@@ -11,6 +13,8 @@ isExcludedContext = (context)->
   false
 
 isExcludedFile = (filename)->
+  return false unless filename
+
   excludedServices = []
   excludedServices.push('newrelic', 'livechatinc', 'selenium-ide', 'firebug', 'tracekit', 'amberjack', 'googleapis')
 
@@ -26,7 +30,7 @@ TraceKit.report.subscribe JSExceptionNotifierLogger = (errorReport) ->
       errorReport.stack && errorReport.stack[0] &&
       errorReport.stack[0].line > 0 &&
       ! isExcludedFile(errorReport.stack[0].url) &&
-      ! isExcludedContext(errorReport.stack[0].context.join())
+      ! isExcludedContext(errorReport.stack[0].context?.join())
 
     # Basic rate limiting
     window.errorCount or (window.errorCount = 0)
