@@ -3,6 +3,7 @@ class JsExceptionNotifierController < ApplicationController
   THROTTLE_DURATION = 240.0 * 60.0   # per 240*60 sec = 4 hour. Keep these values as floats.
 
   before_filter :enforce_rate_limit
+  # skip_before_filter :verify_authenticity_token
 
   class JSException < StandardError
     attr_reader :message
@@ -14,10 +15,15 @@ class JsExceptionNotifierController < ApplicationController
 
   def javascript_error
     if defined?(ExceptionNotification) && Rails.env.production?
-      ExceptionNotifier.notify_exception(JSException.new(params['errorReport']['message'].to_s), :data=> {:errorReport => params['errorReport']})
+
+      data = {}
+      data[:session] = session.keys.collect{ |k| {:k=> k, :v=> session[k]}.inspect } if session.loaded?
+      data[:errorReport] = params['errorReport']
+
+      ExceptionNotifier.notify_exception(JSException.new(params['errorReport']['message'].to_s), :data=> data)
       render json: {}, status: 200
     elsif Rails.env.test?
-      render json: { status: 'OK', text: params['errorReport'].to_s }, status: 200      
+      render json: { status: 'OK', text: params['errorReport'].to_s }, status: 200
     else
       render json: { text: params['errorReport'].to_s }, status: 422
     end
