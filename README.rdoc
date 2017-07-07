@@ -25,6 +25,22 @@ Or just include files within the asset pipeline:
 
   //= require js_exception_notifier
 
+=== Usage when serving JS from CDN
+
+Due to a potential security issue, browsers traditionally don't provide access to error data if the script violates the same-origin policy. Instead, browsers just report a meaningless Script error on line 0, with no additional data.
+
+If you are serving your javascript assets through a CDN (Cloudfront for eg), you need to 
+* have HTTP CORS headers (not covered here)
+* load your JS with a +crossorigin+ tag to enable error reporting
+
+The latter is done with
+
+  javascript_include_tag "js_exception_notifier.js", crossorigin: 'anonymous' 
+
+Or if js_exception_notifier is added to the asset pipeline
+
+  javascript_include_tag "application", crossorigin: 'anonymous'
+
 == JsExceptionNotifier comes with a dummy app:
 
   bundle
