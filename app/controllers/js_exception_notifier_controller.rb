@@ -19,12 +19,15 @@ class JsExceptionNotifierController < ApplicationController
       data = {}
       data[:session] = session.keys.collect{ |k| {:k=> k, :v=> session[k]}.inspect } if session.loaded?
       data[:errorReport] = params['errorReport']
-
+      
+      error_message = params['errorReport'] ? params['errorReport']['message'].to_s : "no error report given"
+      
       if JsExceptionNotifier.action
-        JsExceptionNotifier.action.call(params['errorReport']['message'].to_s, :data=> data)
+        JsExceptionNotifier.action.call(error_message, :data=> data)
       end
 
-      ExceptionNotifier.notify_exception(JSException.new(params['errorReport']['message'].to_s), :data=> data)
+      ExceptionNotifier.notify_exception(JSException.new(error_message), :data=> data)
+
       render json: {}, status: 200
     elsif Rails.env.test?
       render json: { status: 'OK', text: params['errorReport'].to_s }, status: 200
