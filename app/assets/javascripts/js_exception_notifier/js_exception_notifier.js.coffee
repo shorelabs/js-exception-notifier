@@ -37,6 +37,10 @@ TraceKit.report.subscribe JSExceptionNotifierLogger = (errorReport) ->
     return if window.errorCount > 5
     window.errorCount += 1
 
+    # Add information about href and user agent
+    errorReport.url = document.location.href
+    errorReport.useragent = navigator.userAgent
+    
     $.ajax
       url: '/js_exception_notifier'
       headers: {
