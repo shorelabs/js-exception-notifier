@@ -32,6 +32,8 @@ TraceKit.report.subscribe JSExceptionNotifierLogger = (errorReport) ->
       ! isExcludedFile(errorReport.stack[0].url) &&
       ! isExcludedContext(errorReport.stack[0].context?.join())
 
+    errorReport.url = window.location.host
+
     # Basic rate limiting
     window.errorCount or (window.errorCount = 0)
     return if window.errorCount > 5

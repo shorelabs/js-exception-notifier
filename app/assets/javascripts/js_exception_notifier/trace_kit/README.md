@@ -1,9 +1,9 @@
 TraceKit - Cross browser stack traces.
 =====================================
 
-[![Build Status](https://travis-ci.org/occ/TraceKit.png?branch=master)](https://travis-ci.org/occ/TraceKit)
+![Build](https://github.com/csnover/TraceKit/workflows/Node.js%20CI/badge.svg)
 
-### Supports all major browsers, from IE6 to Opera, the Andriod webiew and everywhere in between.
+### Supports all major browsers, from IE6 to Opera, the Android webview and everywhere in between.
 
 Not all browsers support stack traces on error objects, but TraceKit squeezes
 out as much useful information as possible and normalizes it. 3kB minified + gzipped
@@ -14,7 +14,7 @@ out as much useful information as possible and normalizes it. 3kB minified + gzi
 ```
 bower install tracekit
 ```
-This places TraceKit at `components/tracekit/tracekit.js`. Install [bower](http://twitter.github.com/bower/): `npm install bower -g`, download npm with Node: http://nodejs.org
+This places TraceKit at `components/tracekit/tracekit.js`. Install [bower](https://github.com/bower/bower): `npm install bower -g`, download npm with Node: http://nodejs.org
 
 Then include the `<script>` to your page
 
@@ -60,7 +60,7 @@ We recommend the above convention of function naming, `Api_foo` always correspon
 
 ## Options
 
-TraceKit will attempt to fetch an analyze source files, but you can turn this off using:
+TraceKit will attempt to fetch and analyze source files, but you can turn this off using:
 
 ```javascript
 TraceKit.remoteFetching = false;
@@ -78,9 +78,16 @@ View the source for more details and examples.
 
 ## Contributing
 
-Right now the project is being over-hauled, please jump into #shieldjs on freenode to discuss before submitting a big/medium PR (this saves us all time)
+All code must pass JSHint and tests.
+Run `grunt` to compile and run JSHint and `grunt test` for the test suite.
+New features need accompanying documentation in the README, changes to existing api's need updated documentation.
+In general, open an issue for whatever it is you're thinking, get some quick feedback, make good stuff, and we'll accept the PR.
 
-All code must pass JSHint and tests, run `grunt` for this. New features need accompanying documentation in the README, changes to existing api's need updated documentation. In general, open an issue for whatever it is you're thinking, get some quick feedback, make good stuff, and we'll accept the PR.
+Before building (minifying) you will need to get the closure compiler jar:
+```
+wget http://dl.google.com/closure-compiler/compiler-latest.zip
+unzip compiler-latest.zip -d closure
+```
 
 ## License
 
