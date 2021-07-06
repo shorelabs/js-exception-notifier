@@ -14,7 +14,7 @@ class JsExceptionNotifierController < ApplicationController
   end
 
   def javascript_error
-    if defined?(ExceptionNotification) && Rails.env.production?
+    if Rails.env.production?
 
       data = {}
       data[:session] = session.keys.collect{ |k| {:k=> k, :v=> session[k]}.inspect } if session.loaded?
@@ -23,10 +23,10 @@ class JsExceptionNotifierController < ApplicationController
       error_message = params['errorReport'] ? params['errorReport']['message'].to_s : "no error report given"
       
       if JsExceptionNotifier.action
-        JsExceptionNotifier.action.call(error_message, :data=> data)
+        JsExceptionNotifier.action.call(JSException.new(error_message), :data=> data)
+      elsif defined?(ExceptionNotification)
+        ExceptionNotifier.notify_exception(JSException.new(error_message), :data=> data)
       end
-
-      ExceptionNotifier.notify_exception(JSException.new(error_message), :data=> data)
 
       render json: {}, status: 200
     elsif Rails.env.test?
