@@ -18,7 +18,7 @@ class JsExceptionNotifierController < ApplicationController
 
       data = {}
       data[:session] = session.keys.collect{ |k| {:k=> k, :v=> session[k]}.inspect } if session.loaded?
-      data[:errorReport] = params['errorReport']
+      data[:errorReport] = params['errorReport'].to_unsafe_h
       
       error_message = params['errorReport'] ? params['errorReport']['message'].to_s : "no error report given"
       
